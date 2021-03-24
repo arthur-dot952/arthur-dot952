@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Projects</title>
+    <link rel="icon" type="image/jpg" href="images/T.jpg" />
+
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="Images/final.jpg"> </a>
+
+        <div class="menu">
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="services.html">Housing</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="img-slider">
+            <div class="slide active">
+                <img src="Tim/one.jpg" alt="">
+                <div class="info">
+                    <h2>Tim's House Kiambu</h2>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="Tim/two.jpg" alt="">
+                <div class="info">
+                    <h2>Tim's House Kiambu</h2>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="Tim/three.jpg" alt="">
+                <div class="info">
+                    <h2>Tim's House Kiambu</h2>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="Tim/four.jpg" alt="">
+                <div class="info">
+                    <h2>Tim's House Kiambu</h2>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="Tim/five.jpg" alt="">
+                <div class="info">
+                    <h2>Tim's House Kiambu</h2>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="Tim/six.jpg" alt="">
+                <div class="info">
+                    <h2>Tim's House Kiambu</h2>
+                </div>
+            </div>
+
+            <div class="nav">
+                <div class="btn active"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="page" class="container">
+        <div class="title">
+            <h2><span>O</span>THER PROJECTS</h2>
+        </div>
+        <div class="boxA">
+            <div class="box">
+                <img src="Kitengela hse/img 1.jpg" width="320" height="180" alt="" />
+                <h3>Kitengela House Project</h3>
+                <a href="kitengela.html" class="button">Gallery</a>
+            </div>
+            <div class="box">
+                <img src="Lukenya hse/IMG_20190920_134905.jpg" width="320" height="180" alt="" />
+                <h3>Lukenya House Project</h3>
+                <a href="Lukenya hse/lukenya (1).html" class="button">Gallery</a>
+            </div>
+            <div class="box">
+                <img src="Morris hse/IMG_20190518_140742.jpg" width="320" height="180" alt="" />
+                <h3>Morris House Project</h3>
+                <a href="Morris hse/Morris.html" class="button">Gallery</a>
+            </div>
+            <div class="box">
+                <img src="IAO hse/IMG_20180727_132116.jpg" width="320" height="180" alt="" />
+                <h3>IOA House Project</h3>
+                <a href="IAO hse/iao.html" class="button">Gallery</a>
+            </div>
+            <div class="box">
+                <img src="St Catherine Sound room Addition/IMG20200612153144.jpg" width="320" height="180" alt="" />
+                <h3>St Catherine Sound Rooom</h3>
+                <a href="St Catherine Sound room Addition/catherine.html" class="button">Gallery</a>
+            </div>
+        </div>
+        <div class="boxB">
+            <div class="box">
+                <img src="Kitale hse/IMG_20190920_135458.jpg" width="320" height="180" alt="" />
+                <h3>Kitale House Project</h3>
+                <a href="Kitale hse/Kitale.html" class="button">Gallery</a>
+            </div>
+            <div class="box">
+                <img src="Karen/hdr 12.jpg" width="320" height="180" alt="" />
+                <h3>Karen House Project</h3>
+                <a href="Karen/karen.html" class="button">Gallery</a>
+            </div>
+            <div class="box">
+                <img src="Mbugua hse/IMG_20190910_130601_HDR.jpg" width="320" height="180" alt="" />
+                <h3>Mbugua's House Project</h3>
+                <a href="Mbugua hse/mbugua.html" class="button">Gallery</a>
+            </div>
+        </div>
+        <div class="boxC">
+            <div class="box">
+                <img src="Ambatana Manor/1.png" width="320" height="180" alt="" />
+                <h3>Ambatana Manor Project</h3>
+                <a href="Ambatana Manor/ambatana.html" class="button">Gallery</a>
+            </div>
+            <div class="box">
+                <img src="Contemporary cottage Kajiado/IMG-20210208-WA0007.jpg" width="320" height="180" alt="" />
+                <h3>Contemporary cottages</h3>
+                <a href="Contemporary cottage Kajiado/cottage.html" class="button">Gallery</a>
+            </div>
+           
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var slides = document.querySelectorAll('.slide');
+        var btns = document.querySelectorAll('.btn');
+        let currentSlide = 1;
+
+        //javascript for image slider navigation
+        var manualNav = function (manual) {
+            slides.forEach((slide) => {
+                slide.classList.remove('active');
+
+                btns.forEach((btn) => {
+                    btn.classList.remove('active');
+                });
+            });
+
+            slides[manual].classList.add('active');
+            btns[manual].classList.add('active');
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                manualNav(i);
+                currentSlide = i;
+            });
+        });
+
+    </script>
+    <div class="footer">
+        <div class="copyright">
+            <p>&copy; 2021. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>
