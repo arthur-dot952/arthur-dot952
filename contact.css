@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+body
+{
+    background: rgb(67, 65, 163);
+    background: url(images/hot.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-height: 100vh;
+}
+header 
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+header .logo 
+{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    max-width: 100px;
+}
+.head 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6px;
+    letter-spacing: 1px;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+.head span 
+{
+    color: orangered;
+    font-size: 1.8em;
+}
+.menu 
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.1em;
+}
+.menu li 
+{
+    list-style: none;
+    margin: 0 10px;
+}
+.menu li a 
+{
+    color: rgb(255, 254, 253);
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+} 
+.menu li a:hover 
+{
+    color: orangered;
+}
+.contact
+{
+    position: relative;
+    max-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact .content
+{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2
+{
+    font-size: 36px;
+    font-weight: 500;
+    color: rgb(180, 75, 5);
+    text-transform: uppercase;
+}
+.contact .content p
+{
+    font-weight: 300;
+    color: #fff;
+}
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo
+{
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.container .contactinfo .box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactinfo .box .icon
+{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactinfo .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactinfo .box .text h3
+{
+    font-weight: 500;
+    color: #00bcd4;
+}
+.contactForm
+{
+    margin: 40px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    width: 50%;
+    padding: 40px;
+    background: #fff;
+    
+}
+.contactForm h2
+{
+    font-size: 30px;
+    color: rgb(182, 61, 5);
+    font-weight: 500;
+}
+.contactForm .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 9px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+.contactForm .inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.2s;
+    color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+.footer 
+{
+    width: 100%;
+    min-height: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    background: rgba(24, 23, 22, 0.459);
+}
+.footer p 
+{
+    display: flex;
+    max-width: 500;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+}
+.social
+{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-content: center;   
+}
+.social li
+{
+    list-style: none;
+}
+.social li a
+{
+    display: flex;
+    /*filter: invert(1);*/
+    transform: scale(0.5);
+    transition: 0.5s;
+    align-items: flex-end;
+}
+.social li a:hover
+{
+    transform: scale(0.5) translateY(-15px);
+}
+    
+@media (max-width: 990px)
+{
+    .menu 
+    {
+        width:100%;
+        margin-right: 100px;   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+    .contact
+    {
+        padding: 50px;
+    }
+    .container
+    {
+        flex-direction: column;
+    }
+    .container .contactinfo
+    {
+        margin-bottom: 40px;
+        margin-left: 100px;
+    }
+    .container .contactinfo,
+    .contactForm
+    {
+        width: 100%;
+    }
+    
+}
